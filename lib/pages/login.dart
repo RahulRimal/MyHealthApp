@@ -52,72 +52,79 @@ class _LoginPageState extends State<LoginPage> {
                 Positioned(
                   top: 180.0,
                   right: 0.0,
-                  child: Image.asset('assets/images/topIconn.png', height: 150.0),
+                  child:
+                      Image.asset('assets/images/topIconn.png', height: 150.0),
                 ),
               ],
             ),
             Center(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 50.0),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 20.0, vertical: 50.0),
                 child: Column(
-                children: <Widget>[
-                  Card(
-                    elevation: 10.0,
-                    child: Padding(
-                      padding: const EdgeInsets.only(left:15.0),
-                      child: TextFormField(
-                        style: TextStyle(
-                          fontFamily: 'RobotoSlab'
-                        ),
-                        decoration: InputDecoration(
-                          labelText: 'EMAIL'
+                  children: <Widget>[
+                    Card(
+                      elevation: 10.0,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 15.0),
+                        child: TextFormField(
+                          style: TextStyle(fontFamily: 'RobotoSlab'),
+                          decoration: InputDecoration(labelText: 'EMAIL'),
                         ),
                       ),
                     ),
-                  ),
-
-                  _space,
-
-                  Card(
-                    elevation: 10.0,
-                    child: Padding(
-                      padding: const EdgeInsets.only(left:15.0),
-                      child: TextFormField(
-                        style: TextStyle(
-                            fontFamily: 'RobotoSlab'
-                        ),
-                        decoration: InputDecoration(
+                    _space,
+                    Card(
+                      elevation: 10.0,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 15.0),
+                        child: TextFormField(
+                          style: TextStyle(fontFamily: 'RobotoSlab'),
+                          decoration: InputDecoration(
                             labelText: 'PASSWORD',
+                          ),
                         ),
                       ),
                     ),
-                  ),
-
-                  _space,
-
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal :130.0),
-                    child: RaisedButton(
-                      color: Color(0xffa2ecbc),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0)),
-                      onPressed: (){},
-
+                    _space,
+                    Padding(
+                      padding: const EdgeInsets.only(left: 100.0, right: 5.0),
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.end,
                         children: <Widget>[
-
-                          Text('LOGIN'),
-                          SizedBox(width: 10.0,),
-                          Icon(Icons.arrow_forward),
-
+                          RaisedButton(
+                            color: Color(0xffa2ecbc),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(50.0)),
+                            onPressed: () {},
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(vertical: 8.0),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  Text(
+                                    'LOGIN',
+                                    style: TextStyle(fontFamily: 'RobotoSlab'),
+                                  ),
+                                  SizedBox(
+                                    width: 10.0,
+                                  ),
+                                  Icon(
+                                    Icons.arrow_forward,
+                                    size: 25.0,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
-                  ),
-
-                ],
+                  ],
+                ),
+              ),
             ),
-              ),),
           ],
         ),
       ),
