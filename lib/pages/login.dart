@@ -8,41 +8,118 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget get _space {
-    return SizedBox(height: 3.0);
+    return SizedBox(height: 20.0);
   }
 
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: <Widget>[
-          Image.asset('assets/images/topIcon.png',
-          height: 100.0,),
-          Padding(
-            padding: const EdgeInsets.only(top: 150.0, left: 10.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Stack(
               children: <Widget>[
-                Text(
-                  'Login',
-                  style: TextStyle(
-                    fontFamily: 'RobotoSlab',
-                    fontSize: 70.0,
-                    fontWeight: FontWeight.bold,
+                Center(
+                  child: Image.asset('assets/images/login.png'),
+                ),
+                Positioned(
+                  top: 250,
+                  left: 10.0,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'Login',
+                        style: TextStyle(
+                          fontFamily: 'RobotoSlab',
+                          fontSize: 40.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 5.0,
+                      ),
+                      Text(
+                        'Please sign in to continue.',
+                        style: TextStyle(
+                          fontSize: 15.0,
+                          fontFamily: 'RobotoSlab',
+                          color: Colors.black45,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                _space,
-                Text(
-                  'Please sign in to continue.',
-                  style: TextStyle(
-                    fontSize: 25.0,
-                    fontFamily: 'RobotoSlab',
-                    color: Colors.black45,
-                  ),
+                Positioned(
+                  top: 180.0,
+                  right: 0.0,
+                  child: Image.asset('assets/images/topIconn.png', height: 150.0),
                 ),
               ],
             ),
-          ),
-        ],
+            Center(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 50.0),
+                child: Column(
+                children: <Widget>[
+                  Card(
+                    elevation: 10.0,
+                    child: Padding(
+                      padding: const EdgeInsets.only(left:15.0),
+                      child: TextFormField(
+                        style: TextStyle(
+                          fontFamily: 'RobotoSlab'
+                        ),
+                        decoration: InputDecoration(
+                          labelText: 'EMAIL'
+                        ),
+                      ),
+                    ),
+                  ),
+
+                  _space,
+
+                  Card(
+                    elevation: 10.0,
+                    child: Padding(
+                      padding: const EdgeInsets.only(left:15.0),
+                      child: TextFormField(
+                        style: TextStyle(
+                            fontFamily: 'RobotoSlab'
+                        ),
+                        decoration: InputDecoration(
+                            labelText: 'PASSWORD',
+                        ),
+                      ),
+                    ),
+                  ),
+
+                  _space,
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal :130.0),
+                    child: RaisedButton(
+                      color: Color(0xffa2ecbc),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0)),
+                      onPressed: (){},
+
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+
+                          Text('LOGIN'),
+                          SizedBox(width: 10.0,),
+                          Icon(Icons.arrow_forward),
+
+                        ],
+                      ),
+                    ),
+                  ),
+
+                ],
+            ),
+              ),),
+          ],
+        ),
       ),
     );
   }
