@@ -7,6 +7,39 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  Icon _myIcons(String name, Color iconColor, double iconSize) {
+    if (name == 'History') {
+      return Icon(
+        Icons.access_time,
+        color: iconColor,
+        size: iconSize,
+      );
+    } else if (name == 'Summary') {
+      return Icon(
+        Icons.description,
+        color:iconColor,
+        size: iconSize,
+      );
+    } else if (name == 'Profile') {
+      return Icon(
+        Icons.perm_identity,
+        color: iconColor,
+        size: iconSize,
+      );
+    } else if (name == 'Activity') {
+      return Icon(
+        Icons.directions_run,
+        color: iconColor,
+        size: iconSize,
+      );
+    } else
+      return Icon(
+        Icons.arrow_back,
+        color: iconColor,
+        size: iconSize,
+      );
+  }
+
   int _selectedCategory = 0;
   Categories cat = new Categories();
   List<String> categories = new List<String>();
@@ -37,22 +70,27 @@ class _HomePageState extends State<HomePage> {
             Positioned(
               top: 40.0,
               right: 10.0,
-              child: CircleAvatar(
-                radius: 30.0,
-                backgroundColor: Color(0xffa2ecbc),
+              child: GestureDetector(
+                onTap: (){
+                },
+                child: CircleAvatar(
+                  radius: 30.0,
+                  backgroundColor: Color(0xffa2ecbc),
+                  child: Image.network('https://cdn.pixabay.com/photo/2017/03/01/22/18/avatar-2109804_1280.png',
+                  scale: 23.0,),
+                ),
               ),
             ),
             Positioned(
               top: 150.0,
               child: Text(
-                'Summary',
+                  categories[_selectedCategory],
                 style: TextStyle(
                   fontFamily: 'RobotoSlab',
                   fontSize: 30.0,
                 ),
               ),
             ),
-
             Container(
               margin: EdgeInsets.only(top: 250.0),
               color: Color(0xffa2ecbc),
@@ -64,44 +102,43 @@ class _HomePageState extends State<HomePage> {
                     return Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: GestureDetector(
-                    onTap: (){
-                      setState(() {
-                        _selectedCategory = index;
-                      });
-                    },
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                      CircleAvatar(
-                        radius: 30.0,
-                        backgroundColor: Colors.black12,
-                        
-                      ),
-                        Text(
-                          categories[index],
-                          style: TextStyle(
-                              fontFamily: 'RobotoSlab',
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.w800,
-                              color: index == _selectedCategory
-                                  ? Colors.black
-                                  : Colors.black54),
+                        onTap: () {
+                          setState(() {
+                            _selectedCategory = index;
+                          });
+                        },
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            FloatingActionButton(
+                              heroTag: 'btn'+index.toString(),
+                              onPressed: () {},
+                              elevation: 0.0,
+                              backgroundColor: Colors.white,
+                              child: _myIcons(categories[index], Colors.redAccent, 45.0),
+                            ),
+                            Text(
+                              categories[index],
+                              style: TextStyle(
+                                  fontFamily: 'RobotoSlab',
+                                  fontSize: 20.0,
+                                  fontWeight: FontWeight.w800,
+                                  color: index == _selectedCategory
+                                      ? Colors.black
+                                      : Colors.black54),
+                            ),
+                          ],
                         ),
-                      ],
-                    ),
                       ),
                     );
                   }),
             ),
-
-
-
             DraggableScrollableSheet(
-//                initialChildSize: 0.73,
-                initialChildSize: 0.1,
+                initialChildSize: 0.55,
+//                initialChildSize: 0.1,
                 maxChildSize: 0.73,
-//                minChildSize: 0.55,
-                minChildSize: 0.1,
+                minChildSize: 0.4,
+//                minChildSize: 0.1,
                 builder: (context, controller) {
                   return Container(
                     padding: EdgeInsets.only(top: 30.0),
@@ -121,7 +158,7 @@ class _HomePageState extends State<HomePage> {
                             title: GestureDetector(
                               child: Text('Item ${index + 1}'),
                             ),
-                           );
+                          );
                         }),
                   );
                 }),

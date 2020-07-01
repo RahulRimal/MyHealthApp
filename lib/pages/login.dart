@@ -119,7 +119,7 @@ class _LoginPageState extends State<LoginPage> {
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(50.0)),
                             onPressed: () {
-                              if(_email.text == 'rahul@mail.com' && _password.text == 'abc')
+                              if(_email.text == "rahul@mail.com" && _password.text == "abc")
                                 {
                                   Navigator.push(context, MaterialPageRoute(builder: (context)
                                   {

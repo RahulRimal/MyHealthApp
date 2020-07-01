@@ -67,8 +67,10 @@
       <change afterPath="$PROJECT_DIR$/../../health_api/test/widget_test.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../pocket_doctor_final/android/app/google-services.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/essentials/category_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/essentials/category_list.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/pages/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/login.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pocket_docc/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pocket_docc/.metadata" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pocket_docc/README.md" beforeDir="false" />

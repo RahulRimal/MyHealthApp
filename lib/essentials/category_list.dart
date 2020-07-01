@@ -1,6 +1,6 @@
 class Categories
 {
 
-  List<String> categoryList = ['Home','Settings','Summary','HistoryTest'];
+  List<String> categoryList = ['Activity','Profile','Summary','History','Test'];
 
 }
