@@ -61,6 +61,8 @@
       <change afterPath="$PROJECT_DIR$/../../health_api/pubspec.yaml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../health_api/test/widget_test.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../pocket_doctor_final/android/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pocket_docc/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pocket_docc/.metadata" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pocket_docc/README.md" beforeDir="false" />
@@ -193,11 +195,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_XL_API_28" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1e4a5oxmnbEie14it33B93RMp3n" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
