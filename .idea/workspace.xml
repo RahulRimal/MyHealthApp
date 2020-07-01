@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="782c88e7-bded-4518-a09c-f2f3e29212c2" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../../health_api/.gitignore" afterDir="false" />
@@ -62,6 +67,8 @@
       <change afterPath="$PROJECT_DIR$/../../health_api/test/widget_test.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../pocket_doctor_final/android/app/google-services.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/pages/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/login.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pocket_docc/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pocket_docc/.metadata" beforeDir="false" />

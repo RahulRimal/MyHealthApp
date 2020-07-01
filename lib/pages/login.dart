@@ -8,7 +8,6 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  @override
 
   bool _isVisible = true;
 
@@ -19,6 +18,7 @@ class _LoginPageState extends State<LoginPage> {
     return SizedBox(height: 20.0);
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
