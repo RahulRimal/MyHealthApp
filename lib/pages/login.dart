@@ -26,12 +26,15 @@ class _LoginPageState extends State<LoginPage> {
           children: <Widget>[
             Stack(
               children: <Widget>[
-                Center(
-                  child: Image.asset('assets/images/login.png'),
+                Padding(
+                  padding: const EdgeInsets.only(top: 50.0),
+                  child: Center(
+                    child: Image.asset('assets/images/login.png'),
+                  ),
                 ),
                 Positioned(
-                  top: 250,
-                  left: 10.0,
+                  top: 297.0,
+                  left: 20.0,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
