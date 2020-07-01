@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'home.dart';
+
 class LoginPage extends StatefulWidget {
   @override
   _LoginPageState createState() => _LoginPageState();
@@ -7,6 +9,12 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   @override
+
+  bool _isVisible = true;
+
+  TextEditingController _email = TextEditingController();
+  TextEditingController _password = TextEditingController();
+
   Widget get _space {
     return SizedBox(height: 20.0);
   }
@@ -68,6 +76,7 @@ class _LoginPageState extends State<LoginPage> {
                       child: Padding(
                         padding: const EdgeInsets.only(left: 15.0),
                         child: TextFormField(
+                          controller: _email,
                           style: TextStyle(fontFamily: 'RobotoSlab'),
                           decoration: InputDecoration(labelText: 'EMAIL'),
                         ),
@@ -79,9 +88,19 @@ class _LoginPageState extends State<LoginPage> {
                       child: Padding(
                         padding: const EdgeInsets.only(left: 15.0),
                         child: TextFormField(
+                          controller: _password,
+                          obscureText: _isVisible,
                           style: TextStyle(fontFamily: 'RobotoSlab'),
                           decoration: InputDecoration(
                             labelText: 'PASSWORD',
+                            suffixIcon: IconButton(
+                              onPressed: (){
+                                setState(() {
+                                  _isVisible = !_isVisible;
+                                });
+                              },
+                              icon:_isVisible ? Icon(Icons.visibility_off): Icon(Icons.visibility),
+                            ),
                           ),
                         ),
                       ),
@@ -96,7 +115,17 @@ class _LoginPageState extends State<LoginPage> {
                             color: Color(0xffa2ecbc),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(50.0)),
-                            onPressed: () {},
+                            onPressed: () {
+                              if(_email.text == 'rahul@mail.com' && _password.text == 'abc')
+                                {
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)
+                                  {
+                                    return HomePage();
+                                  }));
+                                }
+                              else
+                                print('Login Failed !!');
+                            },
                             child: Padding(
                               padding:
                                   const EdgeInsets.symmetric(vertical: 8.0),
