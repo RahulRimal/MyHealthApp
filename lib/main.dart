@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
       ),
       title: 'Pocket Doctor',
-      home: LoginPage(),
+      home: HomePage(),//LoginPage(),
     );
   }
 }
