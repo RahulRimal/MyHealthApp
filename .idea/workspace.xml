@@ -66,24 +66,9 @@
       <change afterPath="$PROJECT_DIR$/../../health_api/pubspec.yaml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../health_api/test/widget_test.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../pocket_doctor_final/android/app/google-services.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/658efc422609e32d3b9ca2fb44c8b004/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/658efc422609e32d3b9ca2fb44c8b004/.filecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/658efc422609e32d3b9ca2fb44c8b004/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/658efc422609e32d3b9ca2fb44c8b004/app.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/658efc422609e32d3b9ca2fb44c8b004/debug_android_application.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/658efc422609e32d3b9ca2fb44c8b004/debug_android_application.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/658efc422609e32d3b9ca2fb44c8b004/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/658efc422609e32d3b9ca2fb44c8b004/flutter_assets.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/658efc422609e32d3b9ca2fb44c8b004/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/658efc422609e32d3b9ca2fb44c8b004/kernel_snapshot.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/658efc422609e32d3b9ca2fb44c8b004/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/658efc422609e32d3b9ca2fb44c8b004/kernel_snapshot.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/AssetManifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/AssetManifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/app.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/app.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/app.apk.sha1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/essentials/profile_info.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/essentials/profile_info.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/profile.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pocket_docc/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pocket_docc/.metadata" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../pocket_docc/README.md" beforeDir="false" />
